@@ -1,0 +1,9 @@
+.user-info {
+    margin: 20px 0;
+    width: 94%;
+}
+
+.user-info .btn {
+    margin-left: 0;
+    margin-top: 20px;
+}
