@@ -51,16 +51,16 @@ class ContactModel
             $mail->CharSet = "UTF-8";
             $mail->Host       = 'smtp.mail.ru';                         //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'alexd999@list.ru';                     //SMTP username
-            $mail->Password   = 'VYBZDG46cSm5sw4k2pXN';                 //SMTP password
+            $mail->Username   = 'example@mail.ru';                     //SMTP username
+            $mail->Password   = '12345';                 //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 //            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption;
             $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
             //Recipients
-            $mail->setFrom('alexd999@list.ru','Mail sender');
+            $mail->setFrom('example@mail.ru','example@mail.ru');
             $mail->addReplyTo($this->email, $this->name);
-            $mail->addAddress( 'alexd999@list.ru','mail recipient');     //Add a recipient
+            $mail->addAddress( 'example@mail.ru','mail recipient');     //Add a recipient
 
             //Content
 
